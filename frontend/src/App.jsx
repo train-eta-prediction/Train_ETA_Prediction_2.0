@@ -30,7 +30,7 @@ export default function App() {
     setLoading(train.train_id)
     setErrors((current) => ({ ...current, [train.train_id]: '' }))
     try {
-      const { data } = await axios.post('http://127.0.0.1:8000/predict-eta', train)
+      const { data } = await axios.post('https://train-eta-prediction-2-0-1.onrender.com/predict-eta', train)
       setPredictions((current) => ({ ...current, [train.train_id]: data }))
     } catch {
       setErrors((current) => ({ ...current, [train.train_id]: 'Prediction service unavailable. Check the local backend.' }))
