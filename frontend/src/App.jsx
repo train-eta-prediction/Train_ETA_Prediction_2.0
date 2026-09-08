@@ -47,7 +47,7 @@ export default function App() {
         <div className="system-state"><span className="pulse-dot" /> <span>SYSTEM NOMINAL</span><span className="topbar-divider" /> <span className="mono">07 SEP 2026 · 06:42:18 UTC</span></div>
       </header>
 
-      <section className="hero"><div><p className="eyebrow cyan">LIVE CONTROL SURFACE <span className="live-line" /></p><h1>পথসারথি <span>ETA Prediction</span></h1><p className="hero-copy">Real-time arrival intelligence across the eastern rail network.</p></div><div className="hero-side"><span className="signal-bars"><i /><i /><i /><i /></span><span>NETWORK<br /><strong>CONNECTED</strong></span></div></section>
+      <section className="hero"><div><p className="eyebrow cyan">LIVE CONTROL SURFACE <span className="live-line" /></p><h1>পথসারথি |<span>Train ETA Prediction</span></h1><p className="hero-copy">Real-time arrival intelligence across the eastern rail network.</p></div><div className="hero-side"><span className="signal-bars"><i /><i /><i /><i /></span><span>NETWORK<br /><strong>CONNECTED</strong></span></div></section>
 
       <section className="metrics" aria-label="Network summary">
         <div className="metric"><span className="metric-label">MONITORED SERVICES</span><strong>{String(trains.length).padStart(2, '0')}</strong><span className="metric-note cyan">ACTIVE ROUTES</span></div>
