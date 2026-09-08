@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from backend.schemas import PredictionRequest, PredictionResponse
 from backend.model_utils import predict_delay
 
-app = FastAPI(title="Train ETA Prediction API")
+app = FastAPI(title="Pathasarthy API")
 
 # Allow the frontend (running on a different port) to call this API
 app.add_middleware(
