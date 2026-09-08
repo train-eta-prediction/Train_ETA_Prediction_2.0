@@ -1,4 +1,4 @@
-# 🚆 RailSense — AI-Powered Real-Time Train ETA & Delay Intelligence
+# পথসারথি (Pathasarthy) — Train ETA Prediction 2.0
 
 > **A live, intelligent railway forecasting platform that predicts *when* a train will actually arrive — not just how late it currently is — by learning from real-time movement, historical journey patterns, and operational conditions.**
 
@@ -14,7 +14,7 @@ A traditional system stops at:
 
 > **"Train delayed by 20 minutes."**
 
-RailSense answers the question travelers actually care about:
+পথসারথি (Pathasarthy) answers the question travelers actually care about:
 
 > **"When will this train really reach my station — and how confident should I be?"**
 
@@ -26,7 +26,7 @@ Current Delay    : +18 minutes
 Current Speed    : 72 km/h
 ```
 
-RailSense forecasts:
+পথসারথি (Pathasarthy) forecasts:
 
 ```text
 Station       Scheduled ETA     Predicted ETA     Confidence
@@ -44,7 +44,7 @@ Every new movement update triggers an automatic recalculation.
 
 A train running 10 minutes late might recover time, lose more of it to congestion, hit a signal delay, sit through a speed restriction, overrun a station halt, or be slowed by weather. Simply adding today's delay to every future scheduled time is a weak assumption — and it's the assumption most public train-tracking tools still make.
 
-**RailSense is built to:**
+**পথসারথি (Pathasarthy) is built to:**
 
 * Track live train status across a corridor
 * Learn from historical running patterns
@@ -279,7 +279,7 @@ Supports 5–10 trains, 5–10 stations, simulated live movement, historical run
 
 ```text
 ┌──────────────────────────────────────────────────┐
-│          🚆 RAILSENSE — TRAIN ETA INTELLIGENCE     │
+│          🚆 পথসারথি (Pathasarthy) — TRAIN ETA INTELLIGENCE     │
 ├──────────────────────────────────────────────────┤
 │ Search Train: [ 12345                    ] 🔍      │
 │                                                    │
@@ -306,7 +306,7 @@ Also includes a live railway map with train position, delay graph, ETA timeline,
 3. **⚠️ Speed restriction** — Durgapur ETA moves to 13:25
 4. **🚆 Speed recovery** — Durgapur ETA pulls back to 13:21
 
-This sequence is what makes RailSense a *continuous forecasting platform*, not a fixed delay readout — try it live at [train-eta-prediction-2-0.vercel.app](https://train-eta-prediction-2-0.vercel.app/).
+This sequence is what makes পথসারথি (Pathasarthy) a *continuous forecasting platform*, not a fixed delay readout — try it live at [train-eta-prediction-2-0.vercel.app](https://train-eta-prediction-2-0.vercel.app/).
 
 ---
 
@@ -347,6 +347,6 @@ The hosted demo runs on publicly available and synthetic data with simulated rea
 
 ## 🎯 One-Sentence Summary
 
-> RailSense continuously combines live train movement, historical running patterns, and operational context to forecast *future* arrival times and delays — with confidence and explainability — at every upcoming station.
+> পথসারথি (Pathasarthy) continuously combines live train movement, historical running patterns, and operational context to forecast *future* arrival times and delays — with confidence and explainability — at every upcoming station.
 
 **🔗 Try it live:** [https://train-eta-prediction-2-0.vercel.app/](https://train-eta-prediction-2-0.vercel.app/)
