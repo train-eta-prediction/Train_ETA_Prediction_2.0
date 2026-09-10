@@ -2,6 +2,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from backend.schemas import PredictionRequest, PredictionResponse
 from backend.model_utils import predict_delay
+import pandas as pd
+from pathlib import Path
 
 app = FastAPI(title="Pathasarthy API")
 
@@ -54,4 +56,17 @@ def model_insights():
             {"feature": "Origin Station", "importance": 0.0055},
             {"feature": "Distance", "importance": 0.0051},
         ]
+    }
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+historical_df = pd.read_csv(BASE_DIR / "data" / "historical_trains.csv")
+
+@app.get("/historical-data")
+def historical_data(limit: int = 50, offset: int = 0):
+    subset = historical_df.iloc[offset:offset + limit]
+    return {
+        "total_rows": len(historical_df),
+        "limit": limit,
+        "offset": offset,
+        "data": subset.to_dict(orient="records")
     }
