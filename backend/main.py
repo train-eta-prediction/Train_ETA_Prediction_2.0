@@ -33,3 +33,25 @@ def predict_eta(request: PredictionRequest):
         predicted_delay_min=predicted_delay,
         predicted_delay_hms=minutes_to_hms(predicted_delay)
     )
+
+
+@app.get("/model-insights")
+def model_insights():
+    return {
+        "baseline_mae": 20.16,
+        "model_mae": 5.85,
+        "improvement_percent": 71.0,
+        "feature_importance": [
+            {"feature": "Current Delay", "importance": 0.6218},
+            {"feature": "Congestion Level", "importance": 0.1146},
+            {"feature": "Holiday", "importance": 0.1020},
+            {"feature": "Weather", "importance": 0.0601},
+            {"feature": "Weekend", "importance": 0.0336},
+            {"feature": "Train Identity", "importance": 0.0296},
+            {"feature": "Hour of Day", "importance": 0.0108},
+            {"feature": "Destination Station", "importance": 0.0104},
+            {"feature": "Day of Week", "importance": 0.0064},
+            {"feature": "Origin Station", "importance": 0.0055},
+            {"feature": "Distance", "importance": 0.0051},
+        ]
+    }
