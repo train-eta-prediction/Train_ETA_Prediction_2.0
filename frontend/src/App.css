@@ -799,27 +799,3 @@ h1 span {
   padding: 10px 0 50px;
 }
 
-/* Press animation — nav links */
-.nav-link:active {
-  transform: scale(0.9);
-}
-
-/* Press animation — buttons (predict, pagination, any .predict-button) */
-.predict-button {
-  transition: all .2s, transform .1s ease;
-}
-
-.predict-button:active:not(:disabled) {
-  transform: scale(0.96);
-  box-shadow: 0 0 10px #1c697080 inset;
-}
-
-/* Ripple pulse on click for nav links */
-@keyframes navPulse {
-  0% { box-shadow: 0 0 0 0 rgba(84, 229, 236, 0.35); }
-  100% { box-shadow: 0 0 0 10px rgba(84, 229, 236, 0); }
-}
-
-.nav-link.active::after {
-  animation: navPulse 0.5s ease-out;
-}
