@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
       <header className="topbar">
         <div className="brand-lockup">
-          <div className="brand-mark">🚆</div>
+          <div className="brand-mark">🚄</div>
           <p className="brand-name">Pathasarthy</p>
         </div>
 
