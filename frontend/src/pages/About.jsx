@@ -18,7 +18,7 @@ export default function About() {
           <div className="signal-bars">
             <i /><i /><i /><i />
           </div>
-          <span>BUILT FOR A HACKATHON</span>
+          
         </div>
       </section>
 
